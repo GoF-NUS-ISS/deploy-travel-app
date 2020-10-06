@@ -1,12 +1,12 @@
-xpack.security.enabled: true
+xpack.security.enabled: false
 discovery.type: single-node
 network.host: 0.0.0.0
 node.name: elasticsearch
-xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.enabled: false
 xpack.security.http.ssl.key: elasticsearch.key
 xpack.security.http.ssl.certificate_authorities: ca.crt
 xpack.security.http.ssl.certificate: elasticsearch.crt
-xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.enabled: false
 xpack.security.transport.ssl.certificate_authorities: /usr/share/elasticsearch/config/ca.crt
 xpack.security.transport.ssl.certificate: /usr/share/elasticsearch/config/elasticsearch.crt
 xpack.security.transport.ssl.key: /usr/share/elasticsearch/config/elasticsearch.key

@@ -6,5 +6,5 @@ elasticsearch.password: nDt5ApTwW7aNLDbOEiWA
 elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/ca.crt"]
 server.ssl.certificate: "/usr/share/kibana/config/kibana.crt"
 server.ssl.key: "/usr/share/kibana/config/kibana.key"
-server.ssl.enabled: true
+server.ssl.enabled: false
 logging.verbose: "false"
