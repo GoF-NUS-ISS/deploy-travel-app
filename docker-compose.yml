@@ -20,13 +20,13 @@ services:
       - /opt/redis/logs:/logs
   #
   travel-plan-eureka:
-    image: gofnusiss/travel-plan-eureka-api:20201005-013204.ef8c2d8
+    image: gofnusiss/travel-plan-eureka-api:20201005-173926.c60a102
     container_name: eureka1
     ports:
       - "7001:7001"
 
   travel-plan-api:
-    image: gofnusiss/travel-plan-api:20201005-013204.ef8c2d8
+    image: gofnusiss/travel-plan-api:20201005-173926.c60a102
     container_name: travel-plan-api
     ports:
       - "8001:8001"
@@ -34,7 +34,7 @@ services:
       - ./log:/log
 
   travel-plan-elasticsearch:
-    image: gofnusiss/travel-plan-elasticsearch:20201005-013204.ef8c2d8
+    image: gofnusiss/travel-plan-elasticsearch:20201005-173926.c60a102
     container_name: travel-plan-elasticsearch
     ports:
       - "8002:8002"
@@ -43,7 +43,7 @@ services:
       - ./bundle-ssl/ca/ca.crt:/usr/share/elasticsearch/config/ca.crt
 
   travel-plan-zuul:
-    image: gofnusiss/travel-plan-zuul-api:20201005-013204.ef8c2d8
+    image: gofnusiss/travel-plan-zuul-api:20201005-173926.c60a102
     container_name: travel-plan-zuul
     ports:
       - "9527:9527"
